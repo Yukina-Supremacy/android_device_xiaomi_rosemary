@@ -63,3 +63,7 @@ ro.control_privapp_permissions=log
 # Inherit device specific props
 import /system/build_${ro.boot.hwname}.prop
 import /system/build_${ro.boot.product.hardware.sku}.prop
+
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
